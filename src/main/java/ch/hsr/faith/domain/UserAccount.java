@@ -9,6 +9,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class UserAccount implements BaseEntity {
 
+	private static final long serialVersionUID = -1560673216918197042L;
+	
 	private Long id;
 	@NotNull
 	@Size(min = 1)

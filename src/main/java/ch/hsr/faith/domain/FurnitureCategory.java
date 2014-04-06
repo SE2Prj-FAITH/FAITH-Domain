@@ -2,6 +2,8 @@ package ch.hsr.faith.domain;
 
 public class FurnitureCategory implements BaseEntity {
 
+	private static final long serialVersionUID = 4464280529530151097L;
+	
 	private Long id;
 	private String name;
 	private FurnitureCategory parent;

@@ -2,6 +2,8 @@ package ch.hsr.faith.domain;
 
 public class Facility implements BaseEntity {
 
+	private static final long serialVersionUID = -9172204719439043245L;
+	
 	private Long id;
 	private String name;
 	private int level;

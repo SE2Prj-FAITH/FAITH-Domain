@@ -2,6 +2,8 @@ package ch.hsr.faith.domain;
 
 public class ItemNeeded implements BaseEntity {
 
+	private static final long serialVersionUID = 2697341505317158181L;
+	
 	private Long id;
 	private String description;
 	private Integer amount;

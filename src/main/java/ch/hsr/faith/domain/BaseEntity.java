@@ -1,6 +1,8 @@
 package ch.hsr.faith.domain;
 
-public interface BaseEntity {
+import java.io.Serializable;
+
+public interface BaseEntity extends Serializable {
 
 	public Long getId();
 
