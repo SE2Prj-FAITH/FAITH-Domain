@@ -3,9 +3,13 @@ package ch.hsr.faith.domain;
 public class FacilityCategory implements BaseEntity {
 
 	private static final long serialVersionUID = 105559010038707161L;
-	
+
 	private Long id;
-	private String name;
+	private MultilingualString name;
+
+	public FacilityCategory() {
+		this.name = new MultilingualString();
+	}
 
 	public Long getId() {
 		return id;
@@ -15,11 +19,11 @@ public class FacilityCategory implements BaseEntity {
 		this.id = id;
 	}
 
-	public String getName() {
+	public MultilingualString getName() {
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(MultilingualString name) {
 		this.name = name;
 	}
 

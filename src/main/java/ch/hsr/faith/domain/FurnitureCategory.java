@@ -3,10 +3,14 @@ package ch.hsr.faith.domain;
 public class FurnitureCategory implements BaseEntity {
 
 	private static final long serialVersionUID = 4464280529530151097L;
-	
+
 	private Long id;
-	private String name;
+	private MultilingualString name;
 	private FurnitureCategory parent;
+
+	public FurnitureCategory() {
+		this.name = new MultilingualString();
+	}
 
 	public Long getId() {
 		return id;
@@ -16,11 +20,11 @@ public class FurnitureCategory implements BaseEntity {
 		this.id = id;
 	}
 
-	public String getName() {
+	public MultilingualString getName() {
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(MultilingualString name) {
 		this.name = name;
 	}
 
