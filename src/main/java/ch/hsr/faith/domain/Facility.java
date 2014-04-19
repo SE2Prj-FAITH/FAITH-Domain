@@ -10,7 +10,7 @@ public class Facility implements BaseEntity {
 	private FacilityCategory facilityCategory;
 	private UserAccount userAccount;
 	private String street;
-	private Integer zip;
+	private String zip;
 	private String city;
 	private String country;
 	private String homepage;
@@ -67,11 +67,11 @@ public class Facility implements BaseEntity {
 		this.street = street;
 	}
 
-	public Integer getZip() {
+	public String getZip() {
 		return zip;
 	}
 
-	public void setZip(Integer zip) {
+	public void setZip(String zip) {
 		this.zip = zip;
 	}
 
