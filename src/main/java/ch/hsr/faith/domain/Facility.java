@@ -18,6 +18,25 @@ public class Facility implements BaseEntity {
 	private String email;
 	private Float gpsLongitude;
 	private Float gpsLatitude;
+	
+	public Facility() { 
+	}
+
+	public Facility(Facility other) {
+		this.setId(other.getId());
+		this.setName(other.getName());
+		this.setLevel(other.getLevel());
+		this.setUserAccount(other.getUserAccount());
+		this.setStreet(other.getStreet());
+		this.setZip(other.getZip());
+		this.setCity(other.getCity());
+		this.setCountry(other.getCountry());
+		this.setHomepage(other.getHomepage());
+		this.setPhone(other.getPhone());
+		this.setEmail(other.getEmail());
+		this.setGpsLongitude(other.getGpsLongitude());
+		this.setGpsLatitude(other.getGpsLatitude());
+	}
 
 	public Long getId() {
 		return id;
