@@ -12,6 +12,7 @@ public class UserAccount implements BaseEntity {
 	private static final long serialVersionUID = -1560673216918197042L;
 	
 	private Long id;
+	@JsonIgnore
 	@NotNull
 	@Size(min = 1)
 	private String password;

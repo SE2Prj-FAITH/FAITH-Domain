@@ -1,5 +1,7 @@
 package ch.hsr.faith.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Facility implements BaseEntity {
 
 	private static final long serialVersionUID = -9172204719439043245L;
@@ -8,6 +10,7 @@ public class Facility implements BaseEntity {
 	private String name;
 	private int level;
 	private FacilityCategory facilityCategory;
+	@JsonIgnore
 	private UserAccount userAccount;
 	private String street;
 	private String zip;
