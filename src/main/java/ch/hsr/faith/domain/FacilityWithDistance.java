@@ -8,6 +8,10 @@ public class FacilityWithDistance extends Facility implements Comparable<Facilit
 	
 	private int distance;
 	
+	public FacilityWithDistance() {
+		
+	}
+	
 	public FacilityWithDistance(Facility facility, int distance) {
 		super(facility);
 		this.distance = distance;

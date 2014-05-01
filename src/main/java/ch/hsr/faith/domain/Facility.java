@@ -26,6 +26,7 @@ public class Facility implements BaseEntity {
 		this.setId(other.getId());
 		this.setName(other.getName());
 		this.setLevel(other.getLevel());
+		this.setFacilityCategory(other.getFacilityCategory());
 		this.setUserAccount(other.getUserAccount());
 		this.setStreet(other.getStreet());
 		this.setZip(other.getZip());
